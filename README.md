@@ -1,4 +1,4 @@
-# Win10-Computer-Rename
+# Computer-Rename
 A Powershell script that renames a computer to a (maximum) fifteen character NETBIOS string based on a user-defined (eight-character limit) name and the last seven characters of the machine's serial number.
 
 ## Installation
