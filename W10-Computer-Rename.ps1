@@ -1,6 +1,6 @@
 #
 # Authored by: Adam H. Meadvin 
-# Email: adam.meadvin@gmail.com
+# Email: h3rbert@protonmail.ch
 # GitHub: @GhostMach 
 # Creation Date: 16 May 2021
 #
