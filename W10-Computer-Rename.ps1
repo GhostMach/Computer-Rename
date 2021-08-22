@@ -40,16 +40,16 @@ function RenameComputer {
 	)
 
 	Write-Progress -Activity "Renaming Workstation"
-#	Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName" -Name "ComputerName" -Value $CompNameParam
+	Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\ComputerName\ComputerName" -Name "ComputerName" -Value $CompNameParam
 	$LocalStringVal = Get-ItemPropertyValue -Path "HKLM:\Software\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\" -Name "LocalizedString"
 	if($LocalStringVal -ne "%computername%"){
-#		Set-ItemProperty -Path "HKLM:\Software\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\" -Name "LocalizedString" -Value "%computername%"
+		Set-ItemProperty -Path "HKLM:\Software\Classes\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\" -Name "LocalizedString" -Value "%computername%"
 	}
 
 	if($RestartCompParam -eq "Y"){
-#		Rename-Computer -NewName $CompNameParam -Restart -Force
+		Rename-Computer -NewName $CompNameParam -Restart -Force
 	}elseif($RestartCompParam -eq "N"){
-#		Rename-Computer -NewName $CompNameParam -Force
+		Rename-Computer -NewName $CompNameParam -Force
 		Write-Host "Please restart machine at later time to complete name-change process."
 		Start-Sleep 5		
 	}
