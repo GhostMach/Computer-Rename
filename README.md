@@ -13,5 +13,5 @@ Script performs or allows the following:
 - User input to enter a unique user logon name that's up to eight characters in length.
 - Automatically creates a user logon name, up to eight characters in length, based on the first & last names--including middle initial--provided by the user.
 - Modifies the computer's Local Machine (HKLM) registry to change the desktop icon, "This PC" to the renamed computer name.
-- Fully compliant with Microsoft's fifteen character limit for NETBIOS names that are domain-joined devices in a Windows Server environment.
+- Fully compliant with Microsoft's fifteen character limit for NETBIOS names of devices that are domain-joined in a Windows Server environment.
 - Script has built-in logic to validate user-input where after three unsuccesful attempts, the script will exit without commiting changes.
